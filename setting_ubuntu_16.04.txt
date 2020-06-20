@@ -1,0 +1,24 @@
+Link for GCC9: ( or higher version of GCC in tool-chain gcc for ubuntu 16.04 ).
+https://askubuntu.com/questions/466651/how-do-i-use-the-latest-gcc-on-ubuntu/581497#581497
+
+https://stackoverflow.com/questions/847179/multiple-glibc-libraries-on-a-single-host/52454603#52454603
+
+
+Link for Possible missing firmware : bxt_guc_ver8_7.bin and kbl_guc_ver9_14.bin
+https://askubuntu.com/questions/832524/possible-missing-frmware-lib-firmware-i915
+
+Install : zsh, zsh-autosuggestions, gruvbox theme for terminal
+
+App : VSCode, Redshift, Shutter.
+
+Install lastest version of neovim with this link and download clang for LSP.
+https://d0ot.github.io/2019/09/28/Neovim-clangd/
+
+Editor : neovim + vim-plug
+Plugin : +Theme: Gruvbox
+	 +Lightline
+	 +coc.nvim ( include NodeJS ).
+Install clang ( lastest version ) : Intellisense using LSP server. ( Clang for C++ ).
+
+
+
