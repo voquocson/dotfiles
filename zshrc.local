@@ -101,7 +101,6 @@ export EDITOR='nvim'
 alias reload="source ~/.zshrc"
 alias vim="nvim"
 alias python="python3"
-alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
