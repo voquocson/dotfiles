@@ -20,5 +20,12 @@ Plugin : +Theme: Gruvbox
 	 +coc.nvim ( include NodeJS ).
 Install clang ( lastest version ) : Intellisense using LSP server. ( Clang for C++ ).
 
+NodeJs can install with : https://github.com/nodesource/distributions
 
+Anaconda include jedi version 0.17.1 so you don't need to install Jedi on your system. Because coc-python cannot get your path of python, you need to setting this using coc-settings.json, add this source to your json file and jedi will working
+{
+  "python.pythonPath": "~/anaconda3/envs/pytorch/bin/python3"
+}
+
+If you want using with another env you change your path to this json file.
 
