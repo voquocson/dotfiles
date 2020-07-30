@@ -1,1 +1,1 @@
-Dotfiles
+My dotfiles and some notes.
