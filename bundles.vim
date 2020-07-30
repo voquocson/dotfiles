@@ -1,6 +1,5 @@
 "Plugins will be downloaded under the specified directory.
 call plug#begin('~/.config/nvim/bundles')
-
 " Declare plugin via Github repository.
 " Gruvbox.
 Plug 'morhetz/gruvbox'
@@ -13,6 +12,11 @@ Plug 'preservim/nerdtree'
 " fzf.
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
- call plug#end()
+" Nerdcommenter.
+Plug 'preservim/nerdcommenter'
+" Vim-closetag.
+Plug 'alvan/vim-closetag'
+" Vim-easymotion.
+Plug 'easymotion/vim-easymotion'
+call plug#end()
 

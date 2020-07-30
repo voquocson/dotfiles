@@ -14,10 +14,18 @@ set expandtab
 set relativenumber
 set number
 set laststatus=2
+set incsearch
+set autowrite  " Auto :write before run command "
 
 set termguicolors
 set background=dark
+
 " -----------------------------------------.
+" Configure not using arrow keys.
+nnoremap <Left> :echo <"Use h"<CR>
+nnoremap <Right> :echo <"Use l"<CR>
+nnoremap <Up> :echo <"Use k"><CR>
+nnoremap <Down> :echo <"Use j"><CR>
 " Configure auto-closer.
 inoremap (; (<CR>);<C-c>O
 inoremap (, (<CR>),<C-c>O
@@ -49,6 +57,8 @@ noremap ` :Files<CR>
 noremap ; :Buffers<CR>
 
 " coc.nvim.
+" Add `:Format` command to format current buffer.
+command! -nargs=0 Format :call CocAction('format')
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -60,4 +70,9 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+" Closetag.
+let g:closetag_filenames = '*.html,*.js'
+let g:closetag_emptyTags_caseSensitive=1
 
+" Vim-easymotion.
+let g:EasyMotion_do_mapping = 0
