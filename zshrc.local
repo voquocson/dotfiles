@@ -101,6 +101,17 @@ export EDITOR='nvim'
 alias reload="source ~/.zshrc"
 alias vim="nvim"
 alias python="python3"
+alias gotop="gotop -p -c solarized"
+alias gcc9="gcc-9"
+alias g++9="g++-9"
+
+# >>> export for CUDA NVCC
+export PATH=/usr/local/cuda-10.2/bin:/usr/local/cuda-10.2/NsightCompute-2019.1${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+
+# >>> export fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -116,11 +127,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-# >>> export for CUDA NVCC
-export PATH=/usr/local/cuda-10.2/bin:/usr/local/cuda-10.2/NsightCompute-2019.1${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-
-# <<< export fzf for zsh <<<
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
