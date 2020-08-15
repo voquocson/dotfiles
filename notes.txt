@@ -32,4 +32,4 @@ If you want using with another env you change your path to this json file.
 
 Install Source Code Pro font for terminal, nvim. This font is good for coding.
 
-
+conda env lib: conda install numpy, scipy, pandas, matplotlib, seaborns, pytorch, opencv, jedi ( using for coc ).
