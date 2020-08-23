@@ -14,6 +14,8 @@ App : VSCode, Redshift, Shutter.
 Install lastest version of neovim with this link and download clang for LSP.
 https://d0ot.github.io/2019/09/28/Neovim-clangd/
 
+Install llvm/clang for ubuntu : https://apt.llvm.org/
+
 Editor : neovim + vim-plug
 Plugin : +Theme: Gruvbox
 	 +Lightline
