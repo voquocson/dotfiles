@@ -1,0 +1,4 @@
+envs packages:
+install all dependencies in main website of opencv.
+cv : conda install -c conda-forge opencv=4.4.0 or lastest version
+pytorch include CUDA and Cudnn.
