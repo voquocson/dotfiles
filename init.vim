@@ -26,6 +26,7 @@ nnoremap <Left> :echo <"Use h"<CR>
 nnoremap <Right> :echo <"Use l"<CR>
 nnoremap <Up> :echo <"Use k"><CR>
 nnoremap <Down> :echo <"Use j"><CR>
+
 " Configure auto-closer.
 inoremap (; (<CR>);<C-c>O
 inoremap (, (<CR>),<C-c>O
@@ -33,6 +34,7 @@ inoremap {; {<CR>};<C-c>O
 inoremap {, {<CR>},<C-c>O
 inoremap [; [<CR>];<C-c>O
 inoremap [, [<CR>],<C-c>O
+
 " Configure of plugins.
 " Gruvbox theme.
 let g:gruvbox_italic=1
@@ -52,10 +54,6 @@ noremap F :NERDTreeFind<CR>
 
 let NERDTreeShowHidden=1
 
-" fzf
-noremap ` :Files<CR>
-noremap ; :Buffers<CR>
-
 " coc.nvim.
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
@@ -69,10 +67,3 @@ function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
-
-" Closetag.
-let g:closetag_filenames = '*.html,*.js'
-let g:closetag_emptyTags_caseSensitive=1
-
-" Vim-easymotion.
-let g:EasyMotion_do_mapping = 0
