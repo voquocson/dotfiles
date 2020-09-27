@@ -9,14 +9,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Nerdtree.
 Plug 'preservim/nerdtree'
-" fzf.
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 " Nerdcommenter.
 Plug 'preservim/nerdcommenter'
-" Vim-closetag.
-Plug 'alvan/vim-closetag'
-" Vim-easymotion.
-Plug 'easymotion/vim-easymotion'
 call plug#end()
 
