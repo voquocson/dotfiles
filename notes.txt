@@ -35,3 +35,12 @@ If you want using with another env you change your path to this json file.
 Install Source Code Pro font for terminal, nvim. This font is good for coding.
 
 conda env lib: conda install numpy, scipy, pandas, matplotlib, seaborns, pytorch, opencv, jedi ( using for coc ).
+
+# Update
+1. Install git, curl, zsh (autosuggestions, highlight-syntax)
+2. Check firmware is missing if using ubuntu 16.04 => bxt_guc_ver8_7,kbl_guc_ver9_14
+3. Install lastest version gcc, g++, llvm
+4. Install neovim, NodeJS (for coc.nvim)
+5. Install Anaconda for python and add to .zshrc, disable auto base env
+6. If using neovim for python, install Jedi and config pythonPath to this env.
+7. Install monaco font : need 2 version 1 for ubuntu 1 for terminal

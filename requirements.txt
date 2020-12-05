@@ -1,4 +1,0 @@
-envs packages:
-install all dependencies in main website of opencv.
-cv : install version not conflict with lib/framework. with anaconda install
-pytorch include CUDA and Cudnn.
