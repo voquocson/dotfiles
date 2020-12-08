@@ -43,4 +43,4 @@ conda env lib: conda install numpy, scipy, pandas, matplotlib, seaborns, pytorch
 4. Install neovim, NodeJS (for coc.nvim)
 5. Install Anaconda for python and add to .zshrc, disable auto base env
 6. If using neovim for python, install Jedi and config pythonPath to this env.
-7. Install monaco font : need 2 version 1 for ubuntu 1 for terminal
+6. Install monaco using ttf.
