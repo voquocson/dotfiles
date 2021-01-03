@@ -1,4 +1,4 @@
-" Script for nvim configure.
+" Neovim script configuration
  
 " Loads all my plugins.
 if filereadable(expand('~/.config/nvim/bundles.vim'))
@@ -22,18 +22,10 @@ set background=dark
 
 " -----------------------------------------.
 " Configure not using arrow keys.
-nnoremap <Left> :echo <"Use h"<CR>
-nnoremap <Right> :echo <"Use l"<CR>
+nnoremap <Left> :echo <"Use h"><CR>
+nnoremap <Right> :echo <"Use l"><CR>
 nnoremap <Up> :echo <"Use k"><CR>
 nnoremap <Down> :echo <"Use j"><CR>
-
-" Configure auto-closer.
-inoremap (; (<CR>);<C-c>O
-inoremap (, (<CR>),<C-c>O
-inoremap {; {<CR>};<C-c>O
-inoremap {, {<CR>},<C-c>O
-inoremap [; [<CR>];<C-c>O
-inoremap [, [<CR>],<C-c>O
 
 " Configure of plugins.
 " Gruvbox theme.
