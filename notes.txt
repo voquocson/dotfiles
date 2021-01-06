@@ -3,3 +3,5 @@
 3. Install tmux, fuzzy-finder
 4. Install neovim (stable version), vim-plug (plugin-manager), NodeJS (https://github.com/nodesource/distributions)
 5. Insatll Java-compiler, Anaconda
+
+6. vscode config: themes: gruvbox material (hard, material).
