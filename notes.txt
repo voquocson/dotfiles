@@ -5,3 +5,14 @@
 5. Insatll Java-compiler, Anaconda
 
 6. vscode config: themes: gruvbox material (hard, material).
+
+In Installing ubuntu not select third-software-party.
+After install Ubuntu:
+1. Install newest gcc, cmake, clang, llvm.
+2. In current, only nvidia-driver 450 support for change brightness, install cuda 11.0
+3. Insatll zsh, oh-my-zsh, zsh-autosuggestions, zsh-hightlight-syntax
+4. Install tmux, fzf
+5. Install MySQL, PostgreSQL, Spark, Hadoop (it's include java).
+6. Install docker.
+
+Load profile of terminal: https://askubuntu.com/questions/631481/gnome-terminal-profiles-are-not-being-loaded/694670#694670

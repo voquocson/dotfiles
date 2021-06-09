@@ -1,9 +1,17 @@
-" Plugins will be downloaded below the specified directory.
-call plug#begin('~/.config/nvim/bundles')
+set nocompatible
+
+call plug#begin("~/.config/nvim/bundles")
+
+Plug 'sainnhe/gruvbox-material'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'itchyny/lightline.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'preservim/nerdtree'
-Plug 'sheerun/vim-polyglot'
+
+Plug 'vim-python/python-syntax'
+
+Plug 'neoclide/jsonc.vim'
 
 call plug#end()

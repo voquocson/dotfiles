@@ -1,12 +1,9 @@
-" vim-script configuration.
- 
+" Neovim-configurations.
 " Load plugins.
 if filereadable(expand('~/.config/nvim/plugins.vim'))
 	source ~/.config/nvim/plugins.vim
 endif
 
-" Setting neovim
-" ----------------------------------------.
 set showmatch
 set tabstop=4
 set shiftwidth=4
@@ -17,11 +14,12 @@ set laststatus=2
 set incsearch
 set autowrite
 
-set t_Co=256
-set termguicolors
+if has('termguicolors')
+    set termguicolors
+endif
 set background=dark
 
-" ----------------------------------------.
+
 " Disable arrow keys.
 nnoremap <Left> :echo <"Use h"> <CR>
 nnoremap <Right> :echo <"Use l"><CR>
@@ -29,11 +27,10 @@ nnoremap <Up> :echo <"Use k">   <CR>
 nnoremap <Down> :echo <"Use j"> <CR>
 
 " Plugins configurations.
-" Themes
+" Gruvbox Material.
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-let g:gruvbox_material_background='hard'
+let g:gruvbox_material_background='soft'
 let g:gruvbox_material_disable_italic_comment=1
-let g:gruvbox_material_visual_background='grey background'
 colorscheme gruvbox-material
 
 " Lightline.
@@ -41,11 +38,18 @@ let g:lightline = {
       \ 'colorscheme': 'gruvbox_material',
       \ }
 
-" NERDTree
-nnoremap <silent> <F2> :NERDTreeFind<CR>
-nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
-" coc.nvim default setting.
+" NERDTree
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+" coc.nvim
+" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
+" unicode characters in the file autoload/float.vim
+set encoding=utf-8
+
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -65,7 +69,7 @@ set shortmess+=c
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
-if has("patch-8.1.1564")
+if has("nvim-0.5.0") || has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
   set signcolumn=number
 else
@@ -207,3 +211,6 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" Python-syntax highlight
+let g:python_highlight_all = 1
