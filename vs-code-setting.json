@@ -1,0 +1,23 @@
+{
+    "editor.fontLigatures": false,
+    "python.linting.pylintArgs": [
+        "--generate-members=numpy.*, np.*, torch.*, cv2.*, cv.*" 
+    ],
+    "editor.fontFamily": "Monaco",
+    "editor.inlineHints.fontFamily": "Monaco",
+    "terminal.integrated.fontSize": 15,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "editor.fontSize": 15,
+    "python.languageServer": "Pylance",
+    "jupyter.alwaysTrustNotebooks": true,
+    "gruvboxMaterial.italicComments": false,
+    "jupyter.textOutputLimit": 0,
+    "gruvboxMaterial.diagnosticTextBackgroundOpacity": "25%",
+    "gruvboxMaterial.darkContrast": "hard",
+    "workbench.colorTheme": "Gruvbox Material Dark",
+}
